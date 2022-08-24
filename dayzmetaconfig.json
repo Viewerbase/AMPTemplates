@@ -1,0 +1,57 @@
+[
+    {
+        "ConfigFile": "serverDZ_AMP.cfg",
+        "ConfigType": "kvp",
+        "ConfigFormat": "{0} = {1};",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+		    "hostname": "ServerName",
+                    "passwordAdmin": "AdminPassword",
+                    "password": "ServerPassword",
+                    "motd[]": "MOTD",
+                    "motdInterval": "MOTDInterval",
+                    "maxPlayers": "MaxPlayers",
+                    "disableVoN": "DisableVoN",
+                    "vonCodecQuality": "VoiceQuality",
+                    "enableWhitelist": "EnableWhitelist",
+                    "verifySignatures": "VerifySignatures",
+                    "forceSameBuild": "ForceSameBuild",
+                    "timeStampFormat": "TimeStampFormat",
+                    "logFile": "LogFile",
+                    "steamQueryPort": "$ApplicationPort3"
+                }
+            }
+        ]
+        
+    },
+    {
+        "ConfigFile": "battleye/beserver.cfg",
+        "ConfigType": "kvp",
+        "ConfigFormat": "{0} {1}",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "RConPassword": "$RemoteAdminPassword",
+                    "RConPort": "$RemoteAdminPort"
+               }
+            }
+        ]
+    },
+    {
+        "ConfigFile": "battleye/beserver_x64.cfg",
+        "ConfigType": "kvp",
+        "ConfigFormat": "{0} {1}",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "RConPassword": "$RemoteAdminPassword",
+                    "RConPort": "$RemoteAdminPort"
+               }
+            }
+        ]
+    }
+]
