@@ -1,0 +1,174 @@
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "Server Settings",
+        "Description": "The name of your server to show in server lists",
+        "Keywords": "server,name",
+        "FieldName": "ServerName",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "hostname",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "DayZ Server - Powered by AMP"
+    },
+    {
+        "DisplayName": "Admin Password",
+        "Category": "Server Settings",
+        "Description": "The password used to administer the game via the DayZ client",
+        "Keywords": "admin,password",
+        "FieldName": "AdminPassword",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "passwordAdmin",
+        "IncludeInCommandLine": false,
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Server Password",
+        "Category": "Server Settings",
+        "Description": "The password used to connect to the server",
+        "Keywords": "server,password",
+        "FieldName": "ServerPassword",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "password",
+        "IncludeInCommandLine": false,
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "MOTD",
+        "Category": "Server Settings",
+        "Description": "Player welcome message. Format is {\"Line1\", \"Line 2\"}",
+        "Keywords": "MOTD,welcome,message",
+        "FieldName": "MOTD",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "motd[]",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "{\"Welcome to DayZ\", \"Hosted using AMP by CubeCoders\"}"
+    }, 
+    {
+        "DisplayName": "Message Delay",
+        "Category": "Server Settings",
+        "Description": "Number of seconds between each line of the MOTD",
+        "Keywords": "MOTD,message,delay",
+        "FieldName": "MOTDInterval",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "motdInterval",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1"
+    },
+    {
+        "DisplayName": "IP Binding",
+        "Category": "Server Settings",
+        "Description": "Which IP address the DayZ server should listen on",
+        "Keywords": "IP,binding",
+        "FieldName": "ip",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "ip",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "0.0.0.0"
+    },
+    {
+        "DisplayName": "CPU Count",
+        "Category": "Server Settings",
+        "Description": "Number of logical CPU cores to use for parallel tasks processing. This should be no more than the available cores",
+        "Keywords": "cpu,cores,count",
+        "FieldName": "CPUCount",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "CPUCount",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "2"
+    },
+    {
+        "DisplayName": "Player Limit",
+        "Category": "Server Settings",
+        "Description": "The maximum number of players that may connect to the server",
+        "Keywords": "players,limit",
+        "FieldName": "MaxPlayers",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "maxPlayers",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "60"
+    },
+    {
+        "DisplayName": "Enable Voice Chat",
+        "Category": "Server Settings",
+        "Description": "If enabled, players will be able to use in-game voice chat",
+        "Keywords": "voice,chat",
+        "FieldName": "DisableVoN",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "disableVoN",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "0": "Disabled",
+            "1": "Enabled"
+        }
+    },
+    {
+        "DisplayName": "Voice Chat Quality",
+        "Category": "Server Settings",
+        "Description": "Voice sound range: 1-10 is 8kHz (narrowband), 11-20 is 16kHz (wideband), 21-30 is 32kHz (ultrawideband)",
+        "Keywords": "voice,chat",
+        "FieldName": "VoiceQuality",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "vonCodecQuality",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "10"
+    },
+    {
+        "DisplayName": "Enable Whitelist",
+        "Category": "Server Settings",
+        "Description": "Enable the player whitelist for the server",
+        "Keywords": "whitelist",
+        "FieldName": "EnableWhitelist",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "enableWhitelist",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "0": "Disabled",
+            "1": "Enabled"
+        }
+    },
+    {
+        "DisplayName": "Log Time Stamp Format",
+        "Category": "Server Settings",
+        "Description": "Format of the time stamps used in the log file",
+        "Keywords": "time,stamp,format",
+        "FieldName": "TimeStampFormat",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "timeStampFormat",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Short",
+        "EnumValues": {
+            "Short": "Short",
+            "Full": "Full"
+        }
+    },
+    {
+        "DisplayName": "Force Same Server/Client Builds",
+        "Category": "Server Settings",
+        "Description": "When enabled, the server will allow only clients with same the .exe revision as the server",
+        "Keywords": "force,build",
+        "FieldName": "ForceSameBuild",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "forceSameBuild",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "0": "Disabled",
+            "1": "Enabled"
+        }
+    }
+]
